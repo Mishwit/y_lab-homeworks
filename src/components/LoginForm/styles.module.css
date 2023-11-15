@@ -1,0 +1,111 @@
+:root {
+  /* Colors */
+  --COLOR_WHITE: #ffffff;
+  --COLOR_GRAY: #808080;
+  --COLOR_GRAY_LITE: #d8d8d8;
+  --COLOR_BLUE: #2bb8ff;
+  --COLOR_BLUE_LITE: #f0f8ff;
+  --COLOR_DEEP_BLUE: #00a1f1;
+
+  /* Transitions */
+
+  --TRANSITION_NORMAL: 0.3s;
+
+  /* Font-sizes */
+
+  --FS_TEXT: 12px;
+  --FS_TITLE: 24px;
+
+  /* Font-weights */
+
+  --FW_NORMAL: 300;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--COLOR_WHITE);
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.text {
+  text-align: left;
+  margin: 0;
+  font-size: var(--FS_TEXT);
+  margin-bottom: 6px;
+}
+
+.formTitle {
+  font-size: var(--FS_TITLE);
+  font-weight: var(--FW_NORMAL);
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 16px;
+}
+
+.formLine {
+  height: 1px;
+  width: 100%;
+  background-color: var(--COLOR_GRAY_LITE);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 210px;
+  padding: 20px 16px;
+  gap: 20px;
+}
+
+.form input {
+  height: 32px;
+  width: 100%;
+  padding: 0 10px;
+  font-weight: var(--FW_NORMAL);
+  color: var(--COLOR_GRAY);
+  border: none;
+  border-bottom: 1px solid var(--COLOR_GRAY);
+  outline: none;
+}
+
+.form input::placeholder {
+  font-size: var(--FS_TEXT);
+}
+
+.form input:hover {
+  background-color: var(--COLOR_BLUE_LITE);
+}
+
+.form input:focus {
+  background-color: var(--COLOR_BLUE_LITE);
+}
+
+.formLink {
+  font-size: var(--FS_TEXT);
+  color: var(--COLOR_DEEP_BLUE);
+  text-decoration: none;
+  outline: none;
+}
+
+.formLink:hover {
+  text-decoration: underline;
+}
+
+.formButton {
+  width: 130px;
+  padding: 10px 0;
+  background-color: var(--COLOR_DEEP_BLUE);
+  color: var(--COLOR_WHITE);
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: var(--TRANSITION_NORMAL);
+  cursor: pointer;
+  outline: none;
+}
+
+.formButton:hover {
+  background-color: var(--COLOR_BLUE);
+}
